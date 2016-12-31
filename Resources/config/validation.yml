@@ -1,0 +1,15 @@
+Publisher\Entry\Facebook\Mode\Recommendation\FacebookPageRecommendation:
+    getters:
+        messagePayload:
+            - Length:
+                #'@constant("Publisher\\Entry\\Facebook\\FacebookPageEntry::MAX_LENGTH_OF_MESSAGE")'
+                max: 63205
+                maxMessage: "Title and message combined shouldn't exceed {{ limit }} characters."
+
+Publisher\Entry\Facebook\Mode\Recommendation\FacebookUserRecommendation:
+    getters:
+        messagePayload:
+            - Length:
+                #'@constant("Publisher\\Entry\\Facebook\\FacebookUserEntry::MAX_LENGTH_OF_MESSAGE")'
+                max: 63205
+                maxMessage: "Title and message combined shouldn't exceed {{ limit }} characters."
